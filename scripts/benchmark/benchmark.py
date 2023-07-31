@@ -12,7 +12,7 @@ import os
 import sys
 
 import settings
-import plot
+#import plot
 import utils
 
 EXPERIMENTS = {
@@ -171,10 +171,11 @@ def benchmark_single(benchmark, comparisons, platform, device, num_runs, precisi
             label_names[index] += " (non-batched)"
 
     # Plots the graphs
+    """
     plot.plot_graphs(results["benchmarks"], pdf_file_name, results["num_rows"], results["num_cols"],
                      x_keys, y_keys, titles, x_labels, y_labels,
                      label_names, plot_title, tight_plot, verbose)
-
+    """
     print("[benchmark] All done")
 
 
